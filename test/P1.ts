@@ -4,7 +4,7 @@ import { ethers } from "hardhat";
 
 import { P1__factory } from "./../types/factories/P1__factory";
 
-describe("1. 两数之和", function () {
+describe("P1. Two Sum - 两数之和", function () {
   async function deployFixture() {
     const contract: P1__factory = <P1__factory>await ethers.getContractFactory("P1");
     const problem = await contract.deploy();
